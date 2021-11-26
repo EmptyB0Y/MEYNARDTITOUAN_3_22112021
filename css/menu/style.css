@@ -1,0 +1,84 @@
+/*---------HEADER--------*/
+@font-face{
+    font-family: "logo";
+    src: url("../../fonts/Shrikhand.ttf");
+}
+  
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../../fonts/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../../fonts/Roboto-Light.ttf");
+}
+.global-frame{
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+
+}
+
+.logo {
+    font-family: 'logo', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    padding: 1%;
+}
+/*----------FOOTER--------*/
+footer{
+    background-color: #353535;
+    color: #FFFFFF;
+    height: 170px;
+}
+.footer-logo{
+    font-family: 'logo', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5%;
+}   
+.options-1{
+    padding-left: 5%;
+}
+.options-1 a{
+    text-decoration: none;
+    color : white
+}
+.options-2{
+    padding-left: 5%;
+}
+.options-2 a{
+    text-decoration: none;
+    color: #e0d6d6;
+}
+.option{
+    padding: 1% 0 1% 0;
+    display: flex;
+}
+#option-icon-1{
+    padding-right:12px;
+    font-size: 12px;
+}
+#option-icon-2{
+    padding-right:9px;
+    font-size: 10px;
+}

@@ -1,3 +1,9 @@
+   /* animation loading spinner */
+   @keyframes animation__spiner {
+    to {
+     visibility: hidden;
+    }
+  }
 /*---------LOADING SPINNER--------*/
 .custom-loading-spinner {
     cursor: progress;
@@ -29,4 +35,4 @@
     99% { transform: rotate(360deg);}
     100%{ opacity: 0;}
 }
-   
+

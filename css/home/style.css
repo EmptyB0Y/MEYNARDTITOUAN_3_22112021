@@ -1,21 +1,21 @@
 /*---------HEADER--------*/
 @font-face{
     font-family: "logo";
-    src: url("../fonts/Shrikhand.ttf");
+    src: url("../../fonts/Shrikhand.ttf");
 }
   
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf");
+    src: url("../../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
     font-family: "Roboto-Black";
-    src: url("../fonts/Roboto-Black.ttf");
+    src: url("../../fonts/Roboto-Black.ttf");
 }
 @font-face {
     font-family: "Roboto-Light";
-    src: url("../fonts/Roboto-Light.ttf");
+    src: url("../../fonts/Roboto-Light.ttf");
 }
 .global-frame{
     max-width: 375px;
@@ -34,8 +34,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
-
+    height: 50px;
 }
 
 .logo {
@@ -103,17 +104,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .function-box-title{
     font-size: 20px;
     font-weight: bold;
     margin-left: 5%;
+    padding-bottom: 5%;
 }
 /*---------RESTAURANTS BOX--------*/
 .restaurants-box{
     background-color: #f6f6f6;
-    height: 1380px;
+    height: 1330px;
+    margin-top: 15%;
 }
 .restaurants-box-content{
     display: flex;
@@ -124,6 +126,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     padding-top: 10%;
+    padding-bottom: 5%;
     margin-left: 5%;
 }
 /*---------TILES--------*/
@@ -133,7 +136,12 @@ header {
     border-radius: 20px;
     background-color: #f6f6f6;
     display: block;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
+.function-tile-global{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .function-tile:hover{
     box-shadow: 0px 0px 15px 10px rgba(15, 15, 15, 0.3);
@@ -142,16 +150,25 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
+    margin-left: 0;
+}
+.function-tile a{
+    width: 100%;
 }
 .function-number{
-    width: 19px;
-    height: 19px;
-    color: #FFFFFF; 
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    display: flex;
 }
 .function-number p{
     background-color: #9356DC;
-    padding: 20% 80% 20% 40%;
+    padding: 20% 40% 20% 40%;
     border-radius: 20px;
+    display: flex;
+    align-self: center;
 }
 .function-icon{
     color: grey;

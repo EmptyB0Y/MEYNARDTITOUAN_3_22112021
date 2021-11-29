@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/css-reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/menu/style.css">
-    <!--<link rel="stylesheet" href="../css/menu/animation.css">-->
+    <link rel="stylesheet" href="../css/menu/animation.css">
     
     <title>ohmyfood</title>
 </head>
@@ -16,18 +16,161 @@
     <div class="global-frame">
             <header>
                 <div class="top">
-                    <div class="home-button">
-                        <button class="home">
-                            <div class home-icon>
-                                <i class="fa-regular fa-arrow-left"></i>
-                            </div>
-                        </button>
+                    <div class="top-content">
+                        <div class="home-button">
+                            <a href="#">
+                                <div class="home-icon">
+                                    <img src="../images/arrow.png"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="logo">ohmyfood</p>
                     </div>
-                    <p class="logo">ohmyfood</p>
                 </div>
             </header>
             <main>
-
+                    <picture class="restaurant-picture">
+                        <source
+                        srcset="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        media="(max-width: 375px)"
+                        />
+                    <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                    </picture>
+                    <div class="menu">
+                        <div class="menu-title">
+                            <h1 id="restaurant-title">A la française</h1>
+                            <div id="restaurant-icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="entrees-box">
+                            <h1 class="entrees-box-title">ENTREES</h1>
+                            <div class="entrees-box-content">
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Tartare de poulpe acidulé</h2>
+                                            <p class="tile-ingredients">Aux zestes d'orange</p>
+                                        </div>
+                                        <p class="tile-price">25€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Velouté de légumes d'antan</h2>
+                                            <p class="tile-ingredients">Carotte, panais, topinambour</p>
+                                        </div>
+                                        <p class="tile-price">35€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Soupe à l'oignon</h2>
+                                            <p class="tile-ingredients">Revisitée</p>
+                                        </div>
+                                        <p class="tile-price">20€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="plats-box">
+                            <h1 class="plats-box-title">PLATS</h1>
+                            <div class="plats-box-content">
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Coquilles Saint-Jacques</h2>
+                                            <p class="tile-ingredients">Accompagnées d'une purée de panais</p>
+                                        </div>
+                                        <p class="tile-price">40€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Magret de canard</h2>
+                                            <p class="tile-ingredients">Et parmentier de pommes de terre</p>
+                                        </div>
+                                        <p class="tile-price">35€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Pigeonneau d’Ille-et-Vilaine</h2>
+                                            <p class="tile-ingredients">Sur son lit de gnocchis aux légumes</p>
+                                        </div>
+                                        <p class="tile-price">44€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="desserts-box">
+                            <h1 class="desserts-box-title">DESSERTS</h1>
+                            <div class="desserts-box-content">
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Pétales de violettes glacés</h2>
+                                            <p class="tile-ingredients">Et purée de noisettes</p>
+                                        </div>
+                                        <p class="tile-price">18€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Fondant au chocolat</h2>
+                                            <p class="tile-ingredients">Revisité</p>
+                                        </div>
+                                        <p class="tile-price">22€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                                <article class="tile">
+                                    <div class="tile-content">
+                                        <div class="tile-text">
+                                            <h2 class="tile-meal">Millefeuille croustillant</h2>
+                                            <p class="tile-ingredients">Myrtilles et pâte d’amande</p>
+                                        </div>
+                                        <p class="tile-price">23€</p>
+                                    </div>
+                                    <div class="add-meal">
+                                        <button class="add-meal-button"></button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="command-button">
+                            <a href="#" class="button">Commander</a>
+                        </div>
+                    </div>         
             </main>
             <footer>
                 <div class="footer-content">

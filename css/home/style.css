@@ -98,141 +98,160 @@ header {
     color: black;
     text-align: center;
 }
-/*---------FUNCTION BOX--------*/
+/*---------MAIN--------*/
 
-.function-box-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.function-box-title{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 5%;
-    padding-bottom: 5%;
-}
-/*---------RESTAURANTS BOX--------*/
-.restaurants-box{
-    background-color: #f6f6f6;
-    height: 1330px;
-    margin-top: 15%;
-}
-.restaurants-box-content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.restaurants-box-title{
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    margin-left: 5%;
-}
-/*---------TILES--------*/
-.tile{
-    transition: all .15s ease-in-out;
-    box-shadow: 2px 0px 19px -4px rgb(165, 165, 165);
-    border-radius: 20px;
-    background-color: #f6f6f6;
-    display: block;
-    margin: 10px 10px 10px 10px;
-}
-.function-tile-global{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.function-tile:hover{
-    box-shadow: 0px 0px 15px 10px rgba(15, 15, 15, 0.3);
-}
-.function-tile{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    margin-left: 0;
-}
-.function-tile a{
-    width: 100%;
-}
-.function-number{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    color: #FFFFFF;
-    display: flex;
-}
-.function-number p{
-    background-color: #9356DC;
-    padding: 20% 40% 20% 40%;
-    border-radius: 20px;
-    display: flex;
-    align-self: center;
-}
-.function-icon{
-    color: grey;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    /*---------FUNCTION BOX--------*/
 
-.function-icon .fa-ellipsis-v{
-    padding-top: 1px;
-    font-size: 12.5px;
-}
+    .function-box-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .function-box-title{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+    /*---------RESTAURANTS BOX--------*/
+    .restaurants-box{
+        background-color: #f6f6f6;
+        height: 1380px;
+        margin-top: 15%;
+    }
+    .restaurants-box-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .restaurants-box-title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        margin-left: 5%;
+    }
+    /*---------TILES--------*/
+    .tile{
+        transition: all .15s ease-in-out;
+        box-shadow: 2px 0px 19px -4px rgb(165, 165, 165);
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        display: block;
+        margin: 10px 10px 10px 10px;
+    }
+    .function-tile-global{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .function-tile:hover{
+        box-shadow: 0px 0px 15px 10px rgba(15, 15, 15, 0.3);
+    }
+    .function-tile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+    }
+    .function-tile a{
+        width: 100%;
+    }
+    .function-number{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        color: #FFFFFF;
+        display: flex;
+    }
+    .function-number p{
+        background-color: #9356DC;
+        padding: 20% 40% 20% 40%;
+        border-radius: 20px;
+        display: flex;
+        align-self: center;
+    }
+    .function-icon{
+        color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-.function-tile-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 15px;
-    font-weight: bold;
-    height: 65px;
-    width: 100%;
-}
-.function-tile:hover{
-    background-color: #f5edff;
-}
-.function-tile:hover i{
-    color: #9356DC;
-}
-.tile a{
-    text-decoration: none;
-    color:black;
-}
-.restaurant-tile-img img{
-    width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0 0;
-}
-.restaurant-tile-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5%
-}
-.restaurant-tile-text p{
-    font-family: "Roboto-Light";
-    padding-top: 3%;
-}
-.tile-title{
-    font-weight: bold;
-}
-.restaurant-icon{
-    font-size: 25px;
-}
-.restaurant-icon .fas{
-    display: none;
-}
-.restaurant-icon:hover .fas{
-    display: inline;
-    color: #9356DC;
-}
-.restaurant-icon:hover .far{
-    display: none;
-}
+    .function-icon .fa-ellipsis-v{
+        padding-top: 1px;
+        font-size: 12.5px;
+    }
+
+    .function-tile-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+        height: 65px;
+        width: 100%;
+    }
+    .function-tile:hover{
+        background-color: #f5edff;
+    }
+    .function-tile:hover i{
+        color: #9356DC;
+    }
+    .tile a{
+        text-decoration: none;
+        color:black;
+    }
+    .restaurant-tile-img img{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+    }
+    .restaurant-tile-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%
+    }
+    .restaurant-tile-text p{
+        font-family: "Roboto-Light";
+        padding-top: 3%;
+    }
+    .tile-title{
+        font-weight: bold;
+    }
+    .restaurant-icon{
+        font-size: 25px;
+    }
+    .restaurant-icon .fas{
+        display: none;
+    }
+    .restaurant-icon:hover .fas{
+        display: inline;
+        color: #9356DC;
+    }
+    .restaurant-icon:hover .far{
+        display: none;
+    }
+    .restaurant-tile-img img{
+        position: relative;
+        text-align: center;
+    } 
+    .notification {
+        z-index: 1;
+        position: relative;
+        top: 60px;
+        right: -265px;
+        background-color: #99E2D0;
+        color: rgb(4 118 60);
+        width: 80px;
+        border: #99E2D0 solid 8px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2px;
+    }
 
 /*----------FOOTER--------*/
 footer{
@@ -258,7 +277,7 @@ footer{
 }
 .options-2 a{
     text-decoration: none;
-    color: #e0d6d6;
+    color: #f1f1f1;
 }
 .option{
     padding: 1% 0 1% 0;

@@ -223,3 +223,36 @@ footer{
     padding-right:9px;
     font-size: 10px;
 }
+
+/*----------MEDIA QUERIES--------*/
+/*Tablet version*/
+
+@media screen and (min-width: 500px) and (max-width: 991px){
+    .global-frame{
+        max-width: 500px;
+    }
+    .notification{
+        right: -392px;
+    }
+}
+
+/*Desktop version*/
+
+@media screen and (min-width: 992px){
+    .global-frame{
+        max-width: 992px;
+    }
+    .notification{
+        right: -392px;
+    }
+    .menu{
+        height: unset;
+        padding-bottom: 50px;
+    }
+    footer{
+        height: unset;
+        position: relative;
+        top: 115px;
+    }
+
+}

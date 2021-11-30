@@ -291,3 +291,54 @@ footer{
     padding-right:9px;
     font-size: 10px;
 }
+
+@media screen and (min-width: 500px) and (max-width: 991px){
+    .global-frame{
+        max-width: 500px;
+    }
+    .notification{
+        right: -392px;
+    }
+}
+@media screen and (min-width: 992px){
+    .global-frame{
+        max-width: 992px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .function-box{
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .explore-button .button{
+        padding: 10px;
+    }
+    .restaurants-box{
+        height: unset;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+    .restaurants-box-title{
+        padding-bottom: 0;
+    }
+    .restaurants-box-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tile{
+        width: 468px;
+    }
+    .notification{
+        right: -390px;
+    }
+    footer{
+        height: unset;
+    }
+}

@@ -1,0 +1,77 @@
+/*.add-meal-animation{
+    display: none;
+}
+.tile:hover .add-meal{
+    transform: scale(0.1);
+    transition: transform 330ms ease-in-out;
+}*/
+/*.tile:hover .add-meal-animation{
+
+    display: inline-block;
+    background-color: #99E2D0;
+    height: 100%;
+    transform-origin: right 50%;
+    transform: scaleX(1);
+    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+    /*transform: translateY(250%);
+    transition: transform 280ms ease-out 50ms;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    transform: translateY(0);
+    transition: width 2s;
+    transform: translateX(2);
+}*/
+.tile:hover {
+    display:flex;
+    position: relative;
+    overflow: hidden;
+  }
+.tile-text{
+    width: 170px;
+}
+  .slide{
+      display: none;
+  }
+  .slide-container{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+  }
+  .slide-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+  .tile:hover .slide{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      right: -100px;
+      width: 100px;
+      height: 100px;
+      background-color: #99E2D0;
+      -webkit-animation: slide 1.5s forwards;
+      animation: slide 1.5s forwards;
+  }
+  @media screen and (min-width: 992px){
+    .tile:hover .tile-price{
+        padding-left: 620px;
+    }
+}
+  @-webkit-keyframes slide {
+      100% { right: 0; }
+  }
+  
+  @keyframes slide {
+      100% { right: 0; }
+  }
+  .add-meal-animation:active {
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+  }

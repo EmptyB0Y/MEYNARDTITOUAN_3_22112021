@@ -308,6 +308,9 @@ footer{
     .global-frame{
         max-width: 992px;
     }
+    .top{
+        height: 70px;
+    }
     main{
         display: flex;
         flex-direction: column;
@@ -344,5 +347,8 @@ footer{
     }
     footer{
         height: unset;
+    }
+    .footer-logo{
+        padding: 4%;
     }
 }

@@ -19,6 +19,7 @@
 }
 .global-frame{
     max-width: 375px;
+    min-width: 230px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -240,10 +241,11 @@ header {
         text-align: center;
     } 
     .notification {
+        margin: 0;
         z-index: 1;
         position: relative;
         top: 60px;
-        right: -265px;
+        right: -72%;
         background-color: #99E2D0;
         color: rgb(4 118 60);
         width: 80px;
@@ -292,6 +294,16 @@ footer{
     font-size: 10px;
 }
 /*----------MEDIA QUERIES--------*/
+@media screen and (max-width: 230px){
+    .notification{
+        right: -50%;
+    }
+}
+@media screen and (min-width: 210px) and (max-width: 310px){
+    .notification{
+        right: -60%;
+    }
+}
 /*Tablet version*/
 
 @media screen and (min-width: 500px) and (max-width: 991px){

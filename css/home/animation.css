@@ -1,15 +1,19 @@
-   /* animation loading spinner */
-   @keyframes animation__spiner {
-    to {
-     visibility: hidden;
-    }
-  }
 /*---------LOADING SPINNER--------*/
 .custom-loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: progress;
-    position: absolute;
-    width: 19.5%;
-    height: 1310px;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    right: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    visibility: visible;
+    animation: animation__spiner 3s 3s forwards;
+    background: rgba(0,0,0,.5);
+
 }
 .custom-loading-spinner::before {
     box-sizing: border-box;
@@ -20,19 +24,33 @@
     left: 50%;
     margin: -25px 0 0 -25px;
     border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
+    border-top: 3px solid #FF79DA ;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     animation: spin 2s linear infinite;
     animation-iteration-count: 2;
 }
-.custom-loading-spinner::after{
-    display: none;
-}
+
+/* loading spinner animation */
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     99% { transform: rotate(360deg);}
     100%{ opacity: 0;}
 }
-
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    99% { transform: rotate(360deg);}
+    100%{ opacity: 0;}
+}
+@keyframes animation__spiner {
+    to {
+     visibility: hidden;
+    }
+  }
+@-webkit-keyframes animation__spiner {
+    to {
+     visibility: hidden;
+    }
+}

@@ -1,64 +1,106 @@
+/*---------SLIDE--------*/
+.slide{
+      display: none;
+  }
+.slide-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.slide-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    }
 .tile:hover {
     display:flex;
     position: relative;
     overflow: hidden;
-  }
-.tile-text{
+    }
+.tile:hover .tile-text{
     width: 170px;
 }
-  .slide{
-      display: none;
-  }
-  .slide-container{
-      display: flex;
-      justify-content: center;
-      align-items:center;
-  }
-  .slide-content{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-    }
-  .tile:hover .slide{
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      right: -100px;
-      width: 100px;
-      height: 100px;
-      background-color: #99E2D0;
-      -webkit-animation: slide 1.5s forwards;
-      animation: slide 1.5s forwards;
-  }
-  .tile:hover .tile-price{
-    padding-left: 40px;
+.tile:hover .tile-price{
+    padding-left: 60px;
 }
+.tile:hover .slide{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: -100px;
+    width: 70px;
+    height: 100px;
+    background-color: #99E2D0;
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
+  }
+.tile:hover .slide-content{
+    animation-name: spin;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+}
+
   @media screen and (min-width: 500px) and (max-width: 991px){
     .tile:hover .tile-price{
-        padding-left: 140px;
+        padding-left: 170px;
     }
-    .tile-text{
+    .tile:hover .tile-text{
         width: 180px;
     }
   }
   @media screen and (min-width: 992px){
     .tile:hover .tile-price{
-        padding-left: 620px;
+        padding-left: 650px;
     }
-    .tile-text{
+    .tile:hover .tile-text{
         width: 180px;
     }
 }
+
+/* slide animation */
   @-webkit-keyframes slide {
-      100% { right: 0; }
+    100% { right: 0; }
   }
   
   @keyframes slide {
-      100% { right: 0; }
+    100% { right: 0; }
   }
-  .add-meal-animation:active {
-     transform: rotate(45deg);
-     -webkit-transform: rotate(45deg);
-     -ms-transform: rotate(45deg);
+
+  @keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
   }
+  @-webkit-keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*---------FADE IN--------*/
+
+
+.entrees-box-content{
+    opacity: 0;
+    animation: fadein 1s ease-in-out forwards;
+}
+
+.plats-box-content{
+    opacity: 0;
+    animation: fadein 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.desserts-box-content{
+    opacity: 0;
+    animation: fadein 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+    @keyframes fadein {
+
+        to {
+            opacity:1;
+        }
+    }

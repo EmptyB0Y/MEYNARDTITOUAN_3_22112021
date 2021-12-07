@@ -259,9 +259,6 @@ footer{
     .menu{
         height: 100%;
     }
-    .tile-price{
-        padding: 2%;
-    }
     footer{
         height: unset;
         position: relative;

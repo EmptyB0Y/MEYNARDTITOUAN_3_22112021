@@ -19,6 +19,7 @@
 }
 .global-frame{
     max-width: 375px;
+    min-width: 260px;
     margin-right: auto;
     margin-left: auto;
 }

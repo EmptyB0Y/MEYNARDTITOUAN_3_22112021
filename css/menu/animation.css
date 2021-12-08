@@ -16,7 +16,6 @@
     overflow: hidden;
     }
 .tile:hover .tile-text{
-    width: 170px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -43,21 +42,45 @@
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
 }
+/* media queries */
+  @media screen and (max-width: 350px){
+    .tile:hover .tile-text{
+        width: 180px;
+    }
+  }
+
+  @media screen and (min-width: 302px) and (max-width: 330px){
+    .tile:hover .tile-text{
+        width: 130px;
+    }
+  }
+
+  @media screen and (min-width: 270px) and (max-width: 301px){
+    .tile:hover .tile-text{
+        width: 120px;
+    }
+  }
+
+  @media screen and (min-width: 255px) and (max-width: 269px){
+    .tile:hover .tile-text{
+        width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 254px){
+    .tile:hover .tile-text{
+        width: 80px;
+    }
+  }
 
   @media screen and (min-width: 500px) and (max-width: 991px){
     .tile:hover .tile-price{
         padding-left: 170px;
     }
-    .tile:hover .tile-text{
-        width: 180px;
-    }
   }
   @media screen and (min-width: 992px){
     .tile:hover .tile-price{
         padding-left: 640px;
-    }
-    .tile:hover .tile-text{
-        width: 180px;
     }
 }
 

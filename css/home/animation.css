@@ -5,9 +5,8 @@
     align-items: center;
     cursor: progress;
     position: fixed;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    right: 5%;
     margin-right: auto;
     margin-left: auto;
     visibility: visible;

@@ -54,10 +54,15 @@ header {
     column-gap: 15px;
     background-color: #eaeaea;
     height:50px;
-    font-size: 15px;
     box-shadow: inset 1px 3px 6px -5px black;
 }
-
+.location input{
+    background-color: #eaeaea;
+    font-family: Roboto,sans-serif;
+    border: 0;
+    font-size: 15px;
+    width: 140px;
+}
 .sub-top{
     background-color: #f6f6f6;
     height: 230px;
